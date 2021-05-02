@@ -3,14 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Beranda,Cari,Profil,Splash} from '../pages';
+import {BottomNavigator} from '../components'
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const DanusTera = () => {
     return (
-        <Tab.Navigator>
-            
+        <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}> 
             <Tab.Screen name="Beranda" component={Beranda}  />
             <Tab.Screen name="Cari" component={Cari}  />
             <Tab.Screen name="Profil" component={Profil}  />
