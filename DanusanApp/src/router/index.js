@@ -23,11 +23,17 @@ const Router = () => {
     return (
         <Stack.Navigator initialRouteName="Splash">
             <Stack.Screen name="Splash" component={Splash} options={{headerShown: false}} />
-            <Stack.Screen name="DanusTera" component={DanusTera}  />
+            <Stack.Screen name="DanusTera" component={DanusTera} style={styles.Header} options={{headerShown: false}} />
         </Stack.Navigator>
     )
 }
 
 export default Router
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    Header:{
+        fontFamily: 'Rancho',
+        alignContent: 'center',
+        backgroundColor: '#138BFE'
+    }
+})
