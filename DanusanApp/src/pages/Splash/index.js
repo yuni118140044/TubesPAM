@@ -1,14 +1,42 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, {useEffect} from 'react'
+import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import {SpashBackground, Logo} from '../../assets'
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+    
+    useEffect(() => {
+        setTimeout(() =>{
+            navigation.replace('DanusTera');
+        }, 5000)
+    },[navigation]);
+
     return (
-        <View>
-            <Text>Splash</Text>
-        </View>
+        <ImageBackground source={SpashBackground} style={styles.background}>
+            <Image source={Logo} style= {styles.logo}></Image>
+            <Text style={styles.text}>
+                118140080 - Daniel Sipangkar
+            </Text>
+        </ImageBackground>
     )
 }
 
 export default Splash
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    background:{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    logo:{
+        width: 200,
+        height: 113
+    },
+    text:{
+        left: 0,
+        right: 0,
+        bottom: 0,
+        top: 200,
+        color: 'white'
+    }
+})
