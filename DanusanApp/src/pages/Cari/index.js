@@ -1,6 +1,7 @@
 import React from 'react'
-import { Dimensions, Image, ImageBackground, StyleSheet, Text, TextInput, View } from 'react-native'
-import { ImageHeader, IkonSearchbar } from '../../assets'
+import { Dimensions, Image, ImageBackground, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
+import { ImageHeader, IkonSearchbar, ImageMakanan } from '../../assets'
 
 const Cari = () => {
     return (
@@ -11,7 +12,28 @@ const Cari = () => {
                     <TextInput placeholder="Cari danusan..." style={styles.textinput}/>
                     <Image source={IkonSearchbar} style={styles.search}/>
                 </View>
-                <View></View>
+                <View>
+                    <ScrollView>
+                        <View style={styles.danus}>
+                            <TouchableOpacity style={styles.jenisdanus}>
+                                <Image source={ImageMakanan} style={styles.imagemakanan}></Image>
+                                <View>
+                                    <Text style={{fontWeight: 'bold', fontSize: 16, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
+                                    <Text style={{fontSize: 12, color: '#696969', paddingTop: 5, paddingLeft: 25}}>Nama Penjual</Text>
+                                    <Text style={{fontSize: 12, color: '#b4b4b4', paddingTop: 5, paddingLeft: 25}}>1000 biji/hari</Text>
+                                </View>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.jenisdanus}>
+                                <Image source={ImageMakanan} style={styles.imagemakanan}></Image>
+                                <View>
+                                    <Text style={{fontWeight: 'bold', fontSize: 16, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
+                                    <Text style={{fontSize: 12, color: '#696969', paddingTop: 5, paddingLeft: 25}}>Nama Penjual</Text>
+                                    <Text style={{fontSize: 12, color: '#b4b4b4', paddingTop: 5, paddingLeft: 25}}>1000 biji/hari</Text>
+                                </View>
+                            </TouchableOpacity>
+                        </View>
+                    </ScrollView>
+                </View>
             </View>
         </View>
     )
@@ -50,7 +72,9 @@ const styles = StyleSheet.create({
         color: '#848484',
         paddingLeft: 35,
         paddingRight: 20,
-        margin: 20,
+        marginTop: 20,
+        marginHorizontal: 20,
+        marginBottom: 5,
         paddingTop: 10,
         paddingBottom: 6
     },
@@ -58,7 +82,26 @@ const styles = StyleSheet.create({
         position: 'absolute',
         left: 25,
         top: 25
-    }
+    },
+    danus:{
+        paddingHorizontal: 20, 
+        justifyContent: 'center',
+        alignContent: 'center'
+    },
+    jenisdanus:{
+        width: windowWidth-40,
+        height:100,
+        borderRadius: 15,
+        borderColor: '#DCDCDC',
+        borderWidth: 1,
+        marginTop: 15,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+    },
+    imagemakanan:{
+        marginVertical: 15,
+        marginLeft: 10
+    },
 })
 
 
