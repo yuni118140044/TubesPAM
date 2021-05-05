@@ -31,7 +31,7 @@ const Beranda = () => {
                         <TouchableOpacity style={styles.jenisdanus}>
                             <Image source={ImageMakanan} style={styles.imagemakanan}></Image>
                             <View>
-                                <Text style={{fontWeight: 'bold', fontSize: 16, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
+                                <Text style={{fontWeight: 'bold', fontSize: 15, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
                                 <Text style={{fontSize: 12, color: '#696969', paddingTop: 5, paddingLeft: 25}}>Nama Penjual</Text>
                                 <Text style={{fontSize: 12, color: '#b4b4b4', paddingTop: 5, paddingLeft: 25}}>1000 biji/hari</Text>
                             </View>
@@ -39,7 +39,7 @@ const Beranda = () => {
                         <TouchableOpacity style={styles.jenisdanus}>
                             <Image source={ImageMakanan} style={styles.imagemakanan}></Image>
                             <View>
-                                <Text style={{fontWeight: 'bold', fontSize: 16, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
+                                <Text style={{fontWeight: 'bold', fontSize: 15, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
                                 <Text style={{fontSize: 12, color: '#696969', paddingTop: 5, paddingLeft: 25}}>Nama Penjual</Text>
                                 <Text style={{fontSize: 12, color: '#b4b4b4', paddingTop: 5, paddingLeft: 25}}>1000 biji/hari</Text>
                             </View>
@@ -47,7 +47,7 @@ const Beranda = () => {
                         <TouchableOpacity style={styles.jenisdanus}>
                             <Image source={ImageMakanan} style={styles.imagemakanan}></Image>
                             <View>
-                                <Text style={{fontWeight: 'bold', fontSize: 16, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
+                                <Text style={{fontWeight: 'bold', fontSize: 15, color: '#696969', paddingTop: 15, paddingLeft: 25}}>Nama Makanan</Text>
                                 <Text style={{fontSize: 12, color: '#696969', paddingTop: 5, paddingLeft: 25}}>Nama Penjual</Text>
                                 <Text style={{fontSize: 12, color: '#b4b4b4', paddingTop: 5, paddingLeft: 25}}>1000 biji/hari</Text>
                             </View>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         alignItems: 'center' 
     },
     header:{
-        width:161,
+        width:160,
         height: 40,
         marginTop: 15,
         marginBottom: 15
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         borderColor: '#138BFE',
         borderWidth: 1,
         backgroundColor: 'white',
-        paddingBottom: 120
+        paddingBottom: 125
     },
     teksheader:{
         paddingLeft: 20,
